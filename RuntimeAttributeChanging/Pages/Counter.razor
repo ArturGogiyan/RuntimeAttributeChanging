@@ -1,0 +1,14 @@
+﻿@page "/counter"
+
+<li @onclick="TabSelected" class="@cssClass">
+    <div>content</div>
+</li>
+
+@code {
+
+    private string cssClass = "class1";
+
+    private void TabSelected() {
+        cssClass += " active";
+    }
+}
